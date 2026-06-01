@@ -1,0 +1,3 @@
+baseURL = 'https://rsics.github.io/rsics/'
+locale = 'en-us'
+title = 'RSICS'
