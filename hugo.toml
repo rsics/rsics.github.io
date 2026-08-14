@@ -1,3 +1,138 @@
-baseURL = 'https://rsics.github.io/rsics/'
-locale = 'en-us'
-title = 'RSICS'
+baseURL = "https://rsics.github.io/rsics/"
+title = "RSICS"
+author = "rsics"
+locale = "en"
+DefaultContentLanguage = "en"
+enableInlineShortcodes = true
+theme = "tella"
+enableRobotsTXT = true
+
+# Please enable this feature if the site is available in Japanese, Chinese or Korean.
+#hasCJKLanguage = true
+
+[services]
+  [services.googleAnalytics]
+  # If you're using Google Analytics, you can enable this feature.
+  #id = "G-1234567890"
+
+  [services.disqus]
+  # Disqus Comment System
+  #shortname = "your-disqus-shortname"
+
+[params]
+showBlog = true
+mainSections = ['blog']
+googleFonts = true
+
+  [params.logo]
+  main = "img/logo/logo.svg"
+  alt = "Tella Logo"
+
+  # The size parameter is the class name of tailwindcss
+  # https://tailwindcss.com/
+  size = "h-14"
+
+  [params.site]
+  name = "RSICS"
+
+  [params.icon]
+  # If you want to use FontAwesome, set this parameter to true.
+  #fontawesome = true
+
+  # You can also use Bootstrap Icons.
+  bootstrap = true
+
+  [params.share]
+  # If you want to use share buttons, set this parameter to true.
+  enable = true
+  # Uncomment and edit to limit which services are shown
+  # services = ["twitter", "mastodon", "facebook", "line", "linkedin", "whatsapp", "mail", "copy"]
+
+  [params.homepage_meta_tags]
+  meta_description = "RSICS personal site"
+  meta_og_title = "RSICS"
+  meta_og_type = "website"
+  meta_og_url = "https://rsics.github.io/rsics/"
+  meta_og_image = ""
+  meta_og_description = "RSICS personal site"
+  meta_twitter_card = "summary_large_image"
+  meta_twitter_site = "@rsics"
+  meta_twitter_creator = "@rsics"
+
+  [params.giscus]
+  # Giscus Comment System
+  # See https://giscus.app for setup instructions
+  #repo = "your-repo"
+  #repo_id = "your-repo-id"
+  #category = "Announcements"
+  #category_id = "your-category-id"
+  #mapping = "pathname"
+  #strict = "0"
+  #reactions_enabled = "1"
+  #emit_metadata = "0"
+  #input_position = "bottom"
+  #theme = "preferred_color_scheme"
+  #lang = "en"
+  #loading = "lazy"
+
+[menu]
+  [[menu.main]]
+  identifier = "home"
+  name = "Home"
+  url = "/"
+  weight = 1
+
+  # Footer Menu
+  [[menu.footer]]
+  name = "Home"
+  url = "/"
+  weight = 1
+
+[taxonomies]
+category = "categories"
+tag = "tags"
+series = "series"
+
+[security]
+  [security.exec]
+    allow = ['^(dart-)?sass$', '^go$', '^git$', '^node$', '^postcss$', '^tailwindcss$']
+    osEnv = ['(?i)^((HTTPS?|NO)_PROXY|PATH(EXT)?|APPDATA|TE?MP|TERM|GO\w+|(XDG_CONFIG_)?HOME|USERPROFILE|SSH_AUTH_SOCK|DISPLAY|LANG|SYSTEMDRIVE|PROGRAMDATA)$']
+
+[privacy]
+  [privacy.vimeo]
+  disabled = false
+  simple = false
+
+  [privacy.x]
+  disabled = false
+  enableDNT = true
+  simple = false
+
+  [privacy.instagram]
+  disabled = false
+  simple = false
+
+  [privacy.youtube]
+  disabled = false
+  privacyEnhanced = true
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+    unsafe = true
+
+[build]
+  [build.buildStats]
+  enable = true
+  [[build.cachebusters]]
+  source = 'assets/notwatching/hugo_stats\.json'
+  target = 'css'
+
+[module]
+  [[module.mounts]]
+  source = 'assets'
+  target = 'assets'
+  [[module.mounts]]
+  disableWatch = true
+  source = 'hugo_stats.json'
+  target = 'assets/notwatching/hugo_stats.json'
