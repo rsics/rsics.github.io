@@ -1,0 +1,16 @@
+[
+  {
+    "title": "RSICS — Research in Digital Preservation",
+    "image": "img/slide/slide01.jpg"
+  },
+  {
+    "title": "AI for Digital Repositories",
+    "image": "img/slide/slide02.jpg",
+    "color": "text-black"
+  },
+  {
+    "title": "Welcome to RSICS",
+    "image": "img/slide/slide03.jpg",
+    "color": "text-white"
+  }
+]

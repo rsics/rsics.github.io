@@ -2,11 +2,10 @@
 <html lang="en">
 
 <head>
-	<meta name="generator" content="Hugo 0.165.0">
 
 
 <meta charset="utf-8">
-<title>RSICS</title>
+<title>RSICS | Series</title>
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -32,20 +31,21 @@
   
 
 
-<link rel="stylesheet" href='/css/splide.min.css'>
-
 
 <link rel="stylesheet" href='/css/custom.css'>
 
-    <meta name="description" content="RSICS personal site" />
-    <meta property="og:title" content="RSICS" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://rsics.github.io/rsics/" />
-    <meta property="og:image" content="" />
-    <meta property="og:description" content="RSICS personal site" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@rsics" />
-    <meta name="twitter:creator" content="@rsics" />
+
+<meta property="og:site_name" content="RSICS" />
+<meta property="og:title" content="Series | RSICS" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://rsics.github.io/rsics/series/" />
+<meta name="twitter:card" content="summary_large_image">
+<meta property="twitter:title" content="Series">
+
+
+<meta property="og:image" content="https://rsics.github.io/rsics/">
+
+
 
 </head>
 
@@ -92,54 +92,31 @@
       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-up" viewBox="0 0 16 16">
         <path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708z"/>
       </svg>
-    </div>  
-<div class="splide" role="group" aria-label="Top Page Slides">
-    <div class="splide__track">
-        <ul class="splide__list">
-            
-                
-                <li class="splide__slide">
-                    <img src="img/slide/slide01.jpg" alt="">
-                    <div class="s-fade-txt">
-                        <h1 class="text-4xl font-medium text-white">RSICS — Research in Digital Preservation</h1>
-                    </div>
-                </li>
-                
-                <li class="splide__slide">
-                    <img src="img/slide/slide02.jpg" alt="">
-                    <div class="s-fade-txt">
-                        <h1 class="text-4xl font-medium text-black">AI for Digital Repositories</h1>
-                    </div>
-                </li>
-                
-                <li class="splide__slide">
-                    <img src="img/slide/slide03.jpg" alt="">
-                    <div class="s-fade-txt">
-                        <h1 class="text-4xl font-medium text-white">Welcome to RSICS</h1>
-                    </div>
-                </li>
-                
-            
-        </ul>
     </div>
-</div>
+<div class="mx-auto my-10 max-w-6xl">
+  <div class="mx-3 col-span-3 lg:col-span-2 px-2">
+    <h1 class="title text-4xl font-bold mb-8">Series</h1>
+    <div class="content py-1"></div>
+    
+    
+  </div>
   
 
-    <div class="mx-auto my-10 max-w-6xl px-4">
-        <h2 class="text-4xl mb-6 font-bold">Blog</h2>
 
-<div class="flex flex-wrap justify-center text-gray-300 my-5">
-    <a href="blog/"
-        class="duration-200 px-6 py-3 bg-tlgray-800 hover:opacity-80 hover:text-white relative focus:outline-none text-base text-center flex flex-row items-center justify-center gap-2 font-medium">
-        All Posts <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
-            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
-        </svg>
-    </a>
 </div>
-</div>
-    
 
   </main><footer class="bg-tlgray-100">
+  
+  <script>
+    function OnClickURL() {
+      const url = document.getElementById("url").dataset.clipboardText;
+      navigator.clipboard.writeText(url).then(function() {
+        alert('Copied the URL and title.');
+      }).catch(function(error) {
+        console.error('Copy failed', error);
+      });
+    }
+  </script>
   
   <script>
     function toggleNav() {
@@ -184,18 +161,6 @@
     &copy; RSICS 2026 All Rights Reserved.
   </div>
 </footer>
-
-    <script src="/js/splide.min.js"></script>
-    <script>
-        document.addEventListener( 'DOMContentLoaded', function() {
-            new Splide( '.splide', {
-                type   : 'loop',
-                autoplay: true,
-                interval: 6000,
-                speed: 550,
-            } ).mount();
-        } );
-    </script>
 
 </body>
 

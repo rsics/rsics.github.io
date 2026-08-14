@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
 		<title>Categories on RSICS</title>
-		<link>http://localhost:1313/rsics/categories/</link>
+		<link>https://rsics.github.io/rsics/categories/</link>
 		<description>Recent content in Categories on RSICS</description>
 		<generator>Hugo</generator>
 		<language>en</language>
@@ -10,6 +10,6 @@
 		
 		
 		
-			<atom:link href="http://localhost:1313/rsics/categories/index.xml" rel="self" type="application/rss+xml" />
+			<atom:link href="https://rsics.github.io/rsics/categories/index.xml" rel="self" type="application/rss+xml" />
 	</channel>
 </rss>
