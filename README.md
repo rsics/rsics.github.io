@@ -7,7 +7,7 @@ Personal GitHub Pages site built with [Hugo](https://gohugo.io/).
 - **`content/_index.md`** — Home page
 - **`layouts/`** — Hugo templates (`baseof.html`, `home.html`, `page.html`, `section.html`, `taxonomy.html`, `term.html`)
 - **`public/`** — Static output deployed to GitHub Pages
-- **`hugo.toml`** — Site config (baseURL set to `https://rsics.github.io/rsics/`)
+- **`hugo.toml`** — Site config (baseURL set to `https://rsics.github.io/`)
 
 The site uses the [Tella](https://github.com/opera7133/tella) Hugo theme (Tailwind-based, responsive). It's a starting point for linking to external projects and presentations (e.g., the DRI Slidev presentation in `dri-2026`).
 
@@ -39,11 +39,10 @@ sudo port install hugo
 ### Run Dev Server
 
 ```bash
-cd rsics
 hugo server -D   # -D includes draft content
 ```
 
-The site will be available at `http://localhost:1313/rsics/`.
+The site will be available at `http://localhost:1313/`.
 
 ### Build for Production
 
