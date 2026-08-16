@@ -1,16 +1,17 @@
 [
   {
-    "title": "AI Native Development",
-    "image": "img/slide/slide01.jpg"
+    "title": "AI Native",
+    "image": "img/slide/slide01.jpg",
+    "alt": "Evening coastal landscape with warm sunset tones"
   },
   {
-    "title": "On Cloud, on Prem, Private and Ethical",
+    "title": "On Cloud, On Prem, Private & Ethical",
     "image": "img/slide/slide02.jpg",
-    "color": "text-black"
+    "alt": "Evening seascape with blue sky and clouds"
   },
   {
-    "title": "RSICS",
+    "title": "rsics",
     "image": "img/slide/slide03.jpg",
-    "color": "text-white"
+    "alt": "Sea and sky landscape with dramatic clouds"
   }
 ]

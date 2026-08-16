@@ -1,5 +1,5 @@
 baseURL = "https://rsics.github.io/"
-title = "RSICS"
+title = "rsics"
 author = "rsics"
 locale = "en"
 DefaultContentLanguage = "en"
@@ -20,7 +20,7 @@ enableRobotsTXT = true
   #shortname = "your-disqus-shortname"
 
 [params]
-showBlog = true
+showBlog = false
 mainSections = ['blog']
 googleFonts = true
 
@@ -37,7 +37,7 @@ googleFonts = true
 
   [params.icon]
   # If you want to use FontAwesome, set this parameter to true.
-  #fontawesome = true
+  fontawesome = true
 
   # You can also use Bootstrap Icons.
   bootstrap = true
@@ -46,15 +46,15 @@ googleFonts = true
   # If you want to use share buttons, set this parameter to true.
   enable = true
   # Uncomment and edit to limit which services are shown
-  # services = ["twitter", "mastodon", "facebook", "line", "linkedin", "whatsapp", "mail", "copy"]
+  #services = ["github", "mail", "copy"]
 
   [params.homepage_meta_tags]
-  meta_description = "RSICS personal site"
-  meta_og_title = "RSICS"
+  meta_description = "rsics site"
+  meta_og_title = "rsics"
   meta_og_type = "website"
   meta_og_url = "https://rsics.github.io/"
   meta_og_image = ""
-  meta_og_description = "RSICS personal site"
+  meta_og_description = "rsics site"
   meta_twitter_card = "summary_large_image"
   meta_twitter_site = "@rsics"
   meta_twitter_creator = "@rsics"
@@ -82,11 +82,31 @@ googleFonts = true
   url = "/"
   weight = 1
 
+  [[menu.main]]
+  identifier = "projects"
+  name = "Projects"
+  url = "/projects/"
+  weight = 1
+
+  [[menu.main]]
+  identifier = "about"
+  name = "About"
+  url = "/about/"
+  weight = 2
+
+  [[menu.main]]
+  identifier = "contact"
+  name = "Contact"
+  url = "/contact/"
+  weight = 3
+
   # Footer Menu
   [[menu.footer]]
-  name = "Home"
-  url = "/"
-  weight = 1
+  name = "Github"
+  url = "https://github.com/rsics/"
+  #pre = "<i class='bi bi-github text-2xl'></i>"
+  weight = 2
+
 
 [taxonomies]
 category = "categories"
